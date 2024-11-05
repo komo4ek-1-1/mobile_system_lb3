@@ -1,0 +1,4 @@
+#Tue Nov 05 22:45:13 EET 2024
+base.0=H\:\\Andreu\\MobileProjs\\1\\flutter_application_omelchenko_kiyki_21_9\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
