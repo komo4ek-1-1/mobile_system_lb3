@@ -9,7 +9,9 @@ class StudentItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Визначення кольору фону на основі статі
-    final itemColor = student.gender == Gender.male ? Colors.blue[50] : Colors.pink[50];
+    final itemColor = student.gender == Gender.male
+        ? Colors.blue[50]?.withAlpha(255) // Замінено на withAlpha
+        : Colors.pink[50]?.withAlpha(255); // Замінено на withAlpha
 
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
@@ -19,10 +21,10 @@ class StudentItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.3),
+            color: Colors.grey.withAlpha(77), // 0.3 * 255 = 77
             spreadRadius: 2,
             blurRadius: 5,
-            offset: const Offset(0, 3), // зміщення тіні
+            offset: const Offset(0, 3), // Зміщення тіні
           ),
         ],
       ),

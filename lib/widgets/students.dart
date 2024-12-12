@@ -4,7 +4,7 @@ import 'student_item.dart';
 import 'NewStudent.dart';
 
 class StudentsScreen extends StatefulWidget  {
-  StudentsScreen({super.key});
+  const StudentsScreen({super.key});
 
 @override
   State<StudentsScreen> createState() => _StudentsScreenState();
@@ -66,6 +66,7 @@ class _StudentsScreenState extends State<StudentsScreen> {
 Student? _recentlyDeletedStudent; // Зберігає видаленого студента для Undo
   int? _recentlyDeletedIndex; // Зберігає індекс видаленого студента
 
+  // ignore: unused_element
   void _addStudent() {
     showModalBottomSheet(
       context: context,
